@@ -1,0 +1,132 @@
+/* -----------------------------------------------------
+   General Styles
+------------------------------------------------------ */
+body {
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #000000;         /* Black background */
+    color: #E0E0E0;                    /* Soft white text */
+    text-align: center;
+}
+
+/* -----------------------------------------------------
+   Typography & Neon Effect
+------------------------------------------------------ */
+h1, h2, h3, p, a {
+    color: #CCCCCC;  /* Light grey for primary text */
+    text-shadow:
+        0 0 1px #CCCCCC80, 
+        0 0 2px #66666680; /* Subtle grey glow */
+    font-weight: 400;
+}
+
+h2, h3, h5 {
+    color: #999999;      /* Medium grey for secondary headings */
+    text-shadow:
+        0 0 1px #99999980, 
+        0 0 3px #CCCCCC20; /* Light glow effect */
+    font-weight: 400;
+}
+
+/* -----------------------------------------------------
+   Links
+------------------------------------------------------ */
+a {
+    text-decoration: none;
+    color: #FFFFFF;      /* White links */
+    transition: color 0.3s ease, text-shadow 0.3s ease;
+}
+
+a:hover {
+    color: #BBBBBB;      /* Light grey on hover */
+    text-shadow: 0 0 4px #BBBBBB80;
+}
+
+/* -----------------------------------------------------
+   Sections
+------------------------------------------------------ */
+.hero {
+    padding: 50px 20px;
+    background-color: #000000;          /* Black background */
+}
+
+.logo {
+    max-width: 300px;
+    image-rendering: crisp-edges;       /* Keeps image sharp */
+            /* Light grey border */
+    border-radius: 12px;
+}
+
+.hero h1 {
+    font-size: 3em;
+}
+
+.hero p {
+    font-size: 1.2em;
+    color: #999999;                     /* Medium grey secondary text */
+}
+
+/* About Section */
+.about {
+    padding: 40px 20px;
+    background-color: #000000;          /* Dark grey background for card */
+    color: #E0E0E0;
+    border-radius: 16px;
+}
+
+.project {
+    margin: 20px auto;
+    max-width: 1000px;
+    padding: 15px;
+    border: 1px solid #CCCCCC;          /* Light grey border */
+    border-radius: 10px;
+    box-shadow: 0 0 10px #44444440;     /* Subtle dark grey glow */
+    background-color: #333333;          /* Medium dark grey card background */
+    color: #E0E0E0;
+    font-size: 1.2em;
+}
+
+/* Contact Section */
+.contact {
+    padding: 30px 20px;
+    background-color: #000000;
+    color: #E0E0E0;
+}
+
+.contact a {
+    color: #FFFFFF;
+}
+
+.contact a:hover {
+    color: #BBBBBB;     /* Light grey on hover */
+}
+
+/* -----------------------------------------------------
+   Footer
+------------------------------------------------------ */
+footer {
+    padding: 15px;
+    background-color: #000000;
+    font-size: 0.9em;
+    color: #666666;
+}
+
+/* -----------------------------------------------------
+   Accents (used for subtle highlights)
+------------------------------------------------------ */
+.accent {
+    color: #BBBBBB;     /* Light grey accent */
+    font-weight: 600;
+}
+
+/* -----------------------------------------------------
+   Responsive Design
+------------------------------------------------------ */
+@media (max-width: 600px) {
+    .hero h1 {
+        font-size: 2.2em;
+    }
+    .hero p {
+        font-size: 1em;
+    }
+}
